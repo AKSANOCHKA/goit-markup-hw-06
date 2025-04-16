@@ -1,0 +1,658 @@
+/* Base */
+
+
+.button {
+  font-family: inherit;
+  color: #fff;
+  background-color: #404BBF;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+  letter-spacing: 0.04em;
+  background-color: #4D5AE5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:focus {
+  background-color: #404bbf;
+}
+
+
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header-section {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 15px !important;
+}
+
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+.header-logo {
+  margin-right: 76px;
+}
+
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.current::after {
+  opacity: 1;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+
+}
+
+
+
+
+
+
+
+/* Hero section */
+
+.hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(46, 47, 66, 0.7);
+  text-align: center;
+  padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/people-office.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.title_button {
+  padding-bottom: 188px;
+  padding-top: 188px;
+  position: relative;
+  /* Поверх псевдоэлемента */
+  /* Выше, чем у `::after` */
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  max-width: 496px;
+}
+
+
+
+ 
+
+.button {
+  margin-top: 48px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  height: 56px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+}
+
+.button:hover {
+  background-color: #404bbf;
+}
+
+/* our advantages section*/
+
+
+
+/* our team section */
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: #FFFFFF;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.section_title {
+  padding: 120px 0;
+}
+
+.indent_title_team {
+  margin-bottom: 8px;
+}
+
+.team-section {
+  background-color: #F4F4FD;
+  letter-spacing: 0.02em;
+  padding: 120px 0;
+}
+
+
+.align {
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.text-center {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background-color: #FFFFFF;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.name_job {
+  padding: 32px 0;
+  /* Отступы сверху и снизу */
+  text-align: center;
+}
+
+.indent_paragraph_portfolio {
+  padding-bottom: 32px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  /* Равномерно распределяем элементы */
+  gap: 24px;
+}
+
+.list-icons {
+  width: 40px;
+  height: 40px;
+
+}
+
+.soclink-svg {
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soclink-svg:hover,
+.soclink-svg:focus {
+  background-color: #404BBF;
+  /* Цвет при ховере (например, томатный) */
+}
+
+
+.icons-list {
+  display: flex;
+
+  justify-content: center;
+  /* Выравнивание по горизонтали */
+  gap: 24px;
+  /* Расстояние между элементами */
+  margin-top: 8px;
+}
+
+/* Our Portfolio-section */
+.portfolio-section {
+  padding: 120px 0;
+}
+
+/* Центрируем контейнер */
+.container {
+  max-width: 1158px;
+  /* Ограничиваем ширину */
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Заголовок секции */
+.section-title {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+/* Список элементов портфолио */
+.portfolio-list {
+  /* Перенос элементов */
+  gap: 24px;
+  /* Отступы между карточками */
+  justify-content: center;
+  row-gap: 48px;
+}
+
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.portfolio-item:hover .portfolio-item-text {
+  transform: translateY(0);
+
+}
+
+.portfolio-item-picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item-text {
+  position: absolute;
+  top: 0;
+  background-color: #4D5AE5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Обнуляем отступ для последних трех элементов */
+.portfolio-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+
+/* Изображения в карточках */
+.portfolio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Заголовок внутри карточки */
+.indent_title_portfolio {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+  /* Выравниваем влево */
+}
+
+/* Описание внутри карточки */
+.portfolio-item-description {
+  font-size: 16px;
+  text-align: left;
+  /* Выравниваем влево */
+  color: #757575;
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+
+
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+/* Footer */
+
+
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 72px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button_modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.icon_button {
+  fill: #2e2f42;
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button_modal:hover,
+.button_modal:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.button_modal:hover .icon_button,
+.button_modal:focus .icon_button {
+  fill: #ffffff;
+}
+.modal_title {
+  text-align: center;
+  margin-bottom: 16px;
+  font: 500 16px/1.5 "Roboto", sans-serif;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+}
+
+/* Input modal*/
+
+.order-form {
+  display: block;
+}
+
+.order-form button {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.form-field-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom:16px;
+}
+
+
+
+.form-label {
+  font: 400 12px/1.17 "Roboto", sans-serif;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+}
+
+
+.form-input::placeholder {
+  color: #8e8f99;
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+.input-container:has(.form-input:focus) .form-icon,
+.input-container:hover .form-icon {
+  fill: #4d5ae5;
+}
+/* 1. Изменение рамки input при фокусе */
+.input-container .form-input:focus {
+  border-color: #4D5AE5;
+  outline: none;
+}
+
+/* 2. Изменение цвета иконки */
+.form-input:focus+.form-icon,
+.input-container:hover .form-icon {
+  fill: #4D5AE5;
+}
+
+.form-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+.input-container {
+  position: relative;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+/* Comment */
+
+
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  resize: none;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стили при фокусе */
+.modal-textarea:focus {
+  border-color: #4D5AE5;
+}
+
+/* Checkbox */
+.modal-field {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.modal-check {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-check-text {
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font: 400 12px/1.17 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+/* Checkbox Vector Box */
+.modal-check-vector {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  background-color: #ffffff;
+  fill: transparent;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Checked State Styles */
+.modal-check:checked+.modal-check-text>.modal-check-vector {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+
+/* ===== Submit Button Styles ===== */
+
+.button-submit {
+  align-self: center;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font: 500 16px/1.5 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #404bbf;
+}
+
+/* ===== Privacy Link ===== */
+
+.privacy-link {
+  font: 400 12px / 1.33333 "Roboto", sans-serif;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #404BBF;
+}
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
