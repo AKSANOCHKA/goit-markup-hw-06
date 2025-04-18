@@ -749,8 +749,9 @@ font: 700 36px / 1.11111 "Roboto", sans-serif;
     width: 100%;
 }
 .footer-logo {
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     display: block;
+    text-align: center;
 }
 .footer-logo .logo-part {
     color: #f4f4fd;
@@ -815,12 +816,7 @@ font: 700 36px / 1.11111 "Roboto", sans-serif;
       text-align: left;
   }
     
-footer-input .footer-form {
-    width: 288px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .footer-form {
     display: flex;
     flex-direction: column;
@@ -903,12 +899,12 @@ footer-input .footer-form {
     Color: #31D0AA;
 }
 .input-text {
-    letter-spacing: 0.02em;
     font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #fff;
-    text-align: left;
-    margin-left: 0;
+    text-align: center;
+    margin: 0 auto 16px auto;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -928,12 +924,13 @@ footer-input .footer-form {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        
+        column-gap: 24px;
     }
 
     .container-footer {
         width: 264px;
         text-align: left;
+        margin-left: 24px;
     }
 
     .styles-icons-footer {
@@ -944,6 +941,10 @@ footer-input .footer-form {
 
     .footer-logo {
         margin-bottom: 16px;
+        align-self: flex-start;
+            text-align: left;
+            
+
     }
 
         .container-footer-input {
@@ -977,7 +978,9 @@ footer-input .footer-form {
   .input-text {
       align-self: flex-start;
       text-align: left;
+    margin-left: 0;
   }
+  
 }
 @media screen and (min-width: 1158px) {
 .footer {
