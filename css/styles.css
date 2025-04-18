@@ -1,5 +1,5 @@
 
-.hidden- {
+.hidden*{
     display: none;
 }
 body {
@@ -61,15 +61,14 @@ button {
 @media screen and (min-width: 768px) {
     .container {
     width: 768px;
-    padding: 0 16px;
     }
 }
 @media screen and (min-width: 1158px) {
-        .container {
-                width: 1158px;
-                padding: 0 15px;
-            }
+    .container {
+    width: 1158px;
+    padding: 0 15px;
     }
+}
 /* header */
 
 .page-header {
@@ -83,7 +82,7 @@ button {
     justify-content: space-between;
 }
 .nav-list,
-contacts {
+.contacts {
     display: none;
 }
 .logo {
@@ -105,7 +104,7 @@ contacts {
 .burger-btn {
     padding: 0;
     border: none;
-    border-color: transparent;
+    background-color: transparent;
 }
 .burger-icon {
     display: block;
@@ -156,6 +155,8 @@ contacts {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link.curreent{
     position: relative;
 }
 .nav-link.curreent::after {
@@ -176,6 +177,24 @@ contacts {
 .contacts-link:focus,
 .nav-link.current {
     color: #404bbf;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.current::after {
+    opacity: 1;
 }
 }
 
@@ -205,12 +224,15 @@ contacts {
     height: 100%;
     background-color: #fff;
     opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+    visibility: hidden;
+    pointer-events: none;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+ .mobile-menu-container .container {
+     max-width: 280px;
+ }
 .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
@@ -223,16 +245,59 @@ contacts {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 320px;
+    min-height: 640px;
+    
 }
 .mobile-menu-close {
     position: absolute;
     top: 24px;
-    left: 24px;
     right: 24px;
+    position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
 }
 .mobile-menu-nav {
     margin-bottom: auto;
 }
+.nav-list-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.nav-link-menu {
+font: 700 36px / 1.11111 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.nav-link-menu:focus {
+    color: #404bbf;
+    /* насыщенный синий (можно заменить на любой другой) */
+    outline: none;
+    /* убираем стандартную рамку браузера, по желанию */
+}
+.contacts-menu {
+    font-style: normal;
+    margin-bottom: 48px;
+}
+.contacts-list-menu {
+    display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+}
+
+
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
@@ -714,6 +779,7 @@ contacts {
     display: flex;
     align-items: center;
 }
+
 .footer-icon {
     fill: white;
 }
@@ -960,4 +1026,9 @@ footer-input .footer-form {
       cursor: pointer;
       transition: background-color 0.3s ease;
   }
+}
+.footer-list-menu {
+    gap: 40px;
+    display: flex;
+    align-items: center;
 }
