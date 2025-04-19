@@ -994,6 +994,7 @@ font: 500 16px / 1.5 "Roboto", sans-serif;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        column-gap: 24px;
     }
 
     .container-footer {
@@ -1100,6 +1101,9 @@ font: 500 16px / 1.5 "Roboto", sans-serif;
   .footer-btn {
       cursor: pointer;
       transition: background-color 0.3s ease;
+  }
+  .footer-row {
+      column-gap: 0;
   }
 }
 .footer-list-menu {
