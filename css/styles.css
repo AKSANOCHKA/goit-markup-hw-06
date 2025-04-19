@@ -978,9 +978,8 @@ font: 500 16px / 1.5 "Roboto", sans-serif;
 @media screen and (min-width: 768px) {
     .footer {
             padding-top: 96px;
-            
-
         }
+        
     .footer-container {
         padding-left: 108px;
         max-width: 768px;
@@ -1000,6 +999,7 @@ font: 500 16px / 1.5 "Roboto", sans-serif;
     .container-footer {
         width: 264px;
         text-align: left;
+        margin-bottom: 0;
     }
 
     .styles-icons-footer {
